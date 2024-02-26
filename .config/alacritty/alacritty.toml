@@ -26,19 +26,19 @@ foreground = "0xC6C6C4"
 size = 12
 
 [font.bold]
-family = "terminal-font"
+family = "JetBrains Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "terminal-font"
+family = "JetBrains Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "terminal-font"
+family = "JetBrains Mono"
 style = "Italic"
 
 [font.normal]
-family = "terminal-font"
+family = "JetBrains Mono"
 style = "Regular"
 
 [font.offset]
