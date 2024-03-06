@@ -107,7 +107,7 @@ alias tree-git="exa --icons --tree --git --git-ignore --ignore-glob='.git' -a"
 
 alias cat="bat"
 
-export FZF_COMPLETION_TRIGGER=''
+export FZF_COMPLETION_TRIGGER='~'
 export FZF_DEFAULT_COMMAND="fd --type f --strip-cwd-prefix"
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 _fzf_compgen_path() {
