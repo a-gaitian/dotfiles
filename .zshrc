@@ -4,6 +4,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+#SPACESHIP_PROMPT_ASYNC=false
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -116,3 +118,23 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd --type d --hidden --follow --exclude ".git" . "$1"
 }
+
+export PATH="$PATH:$HOME/.cargo/bin"
+source "$HOME/.cargo/env"
+
+export JAVA_HOME="/Users/a.gaitian/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home"
+
+# The next line updates PATH for Yandex Cloud CLI.
+if [ -f '/Users/a.gaitian/yandex-cloud/path.bash.inc' ]; then source '/Users/a.gaitian/yandex-cloud/path.bash.inc'; fi
+
+# The next line enables shell command completion for yc.
+if [ -f '/Users/a.gaitian/yandex-cloud/completion.zsh.inc' ]; then source '/Users/a.gaitian/yandex-cloud/completion.zsh.inc'; fi
+
+alias ycs3='aws s3 --endpoint-url=https://storage.yandexcloud.net'
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
+export GRAALVM_HOME="/Users/a.gaitian/Library/Java/JavaVirtualMachines/graalvm-jdk-22.0.1+8.1/Contents/Home"
+
+export KUBECONFIG="$HOME/.kube/k3s-gray"
+alias kb="kubectl"
+source <(kubectl completion zsh)
