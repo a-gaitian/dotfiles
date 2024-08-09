@@ -14,6 +14,7 @@
 
 - git
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- docker
 
 ### CLIs:
 
