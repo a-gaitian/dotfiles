@@ -139,3 +139,5 @@ export GRAALVM_HOME="/Users/a.gaitian/Library/Java/JavaVirtualMachines/graalvm-j
 export KUBECONFIG="$HOME/.kube/k3s-gray"
 alias kb="kubectl"
 source <(kubectl completion zsh)
+
+export PATH=$PATH:~/.spoof-dpi/bin
